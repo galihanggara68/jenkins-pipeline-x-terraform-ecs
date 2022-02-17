@@ -1,5 +1,5 @@
 variable "remote_state_path" {
-  default = ""
+  default = "../cluster/terraform.tfstate"
 }
 
 variable "instance_type" {
@@ -39,7 +39,7 @@ variable "data_disks_name" {
 }
 
 variable "data_disks_size" {
-    default = 20
+    default = 40
 }
 
 variable "data_disks_category" {
