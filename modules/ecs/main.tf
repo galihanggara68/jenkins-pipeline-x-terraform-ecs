@@ -2,6 +2,7 @@ resource "alicloud_instance" "instance" {
   security_groups   = var.security_groups
 
   # series III
+  resource_group_id          = var.resource_group_id
   instance_type              = var.instance_type
   system_disk_category       = var.system_disk_category
   system_disk_name           = var.system_disk_name

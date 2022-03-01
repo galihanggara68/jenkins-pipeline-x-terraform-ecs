@@ -16,6 +16,7 @@ module "vm" {
   security_groups   = [data.terraform_remote_state.vpc.outputs.this_security_group_id]
 
   # series III
+  resource_group_id          = data.terraform_remote_state.vpc.this_resource_group_id
   instance_type              = var.instance_type
   system_disk_category       = var.system_disk_category       
   system_disk_name           = var.system_disk_name           

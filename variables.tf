@@ -6,6 +6,10 @@ variable "instance_type" {
     default = "ecs.t6-c1m2.large"
 }
 
+variable "resource_group_id" {
+    
+}
+
 variable "system_disk_category" {
     default = "cloud_efficiency"
 }

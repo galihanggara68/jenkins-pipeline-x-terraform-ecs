@@ -26,6 +26,9 @@ variable "instance_name" {
     default = ""
 }
 
+variable "resource_group_id" {
+}
+
 variable "password" {
     default = "Password123"
 }
